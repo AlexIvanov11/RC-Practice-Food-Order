@@ -9,7 +9,7 @@ const Header = (props) => {
     <>
       <header className={styles.header}>
         <h1>Food from Belyash</h1>
-        <HeaderCartButton />
+        <HeaderCartButton open={props.onOpen}/>
       </header>
       <div className={styles.mainImage}>
         <img src={meals} alt="A table full of delicious meals" />
